@@ -25,14 +25,14 @@ medirDistancia(coodenadasCasaInstituto);
 mostrarDireccion(coodenadasCasaInstituto,nombresCoordenadas);
 
 function mostrarDireccion(coordenadas, persona){
-    let auxArray = [];
+    let direccion = [];
     let casa=0;
     for(let i =0; i<coordenadas.length;i++){
         for(let j = 0; j<2;j++){
             if(j==0)
             {
-                auxArray = coordenadas[i][j];
-                L.marker(auxArray).addTo(map)
+                direccion = coordenadas[i][j];
+                L.marker(direccion).addTo(map)
                 .bindPopup("Desde  "+persona[casa]+ " la distancia es:"+ unionesDistancia[casa])
                 .openPopup();
                 casa++;
