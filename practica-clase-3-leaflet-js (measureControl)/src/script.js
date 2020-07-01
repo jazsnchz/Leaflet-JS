@@ -6,7 +6,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 L.marker([-0.257128, -78.546270]).addTo(map)
     .bindPopup('Kevin Guchagmira House')
-    //.openPopup();
+    . openPopup();
 L.marker([-0.355708, -78.528793]).addTo(map)
     .bindPopup('Jazmín Sánchez House')
     .openPopup();
