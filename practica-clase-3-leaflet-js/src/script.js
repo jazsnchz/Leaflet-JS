@@ -64,12 +64,12 @@ function medirDistancia(coordenadas){
     let distancia = 0;
     let ejeX = -0.225069;
     let ejeY = -78.5168959;
-    let auxArray = []
+    let instancias = []
     for(let i =0; i<coordenadas.length;i++){
         for(let j = 0; j<2;j++){
             if(j==0){  
-                auxArray = coordenadas[i][j];
-                distancia = Math.sqrt(Math.pow(ejeX-auxArray[0],2)+Math.pow(ejeY-auxArray[1],2))
+                instancias = coordenadas[i][j];
+                distancia = Math.sqrt(Math.pow(ejeX-instancias[0],2)+Math.pow(ejeY-instancias[1],2))
                 unionesDistancia.push(distancia);
                 console.log(distancia);
             }
