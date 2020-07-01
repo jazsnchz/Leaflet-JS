@@ -22,19 +22,15 @@ L.marker([-0.0866811,-78.5073176]).addTo(map)
 L.marker([-0.2235145,-78.5113281]).addTo(map)
     .bindPopup('Jeniffer Guañuna House')
     .openPopup();
-
 L.marker([-0.071850, -78.435068]).addTo(map)
     .bindPopup('Francisco Jumbo House')
     .openPopup();
-
 L.marker([-0.290397, -78.552108]).addTo(map)
     .bindPopup('Kevin Quemag House')
     .openPopup();
-
 L.marker([-0.241768, -78.526977]).addTo(map)
     .bindPopup('Michael Pastrana House')
     .openPopup();
-
 L.marker([-0.352055, -78.528046]).addTo(map)
     .bindPopup('Mauricio Matango House')
     .openPopup();
