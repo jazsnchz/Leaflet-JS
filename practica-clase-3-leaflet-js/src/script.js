@@ -60,7 +60,7 @@ function colorRandom(){
     return color;
 }
 
-function medirDistancia(coordenadas){
+function medirDistancia(coordenadas)=>{
     let distancia = 0;
     let ejeX = -0.225069;
     let ejeY = -78.5168959;
@@ -72,6 +72,26 @@ function medirDistancia(coordenadas){
                 distancia = Math.sqrt(Math.pow(ejeX-instancias[0],2)+Math.pow(ejeY-instancias[1],2))
                 unionesDistancia.push(distancia);
                 console.log(distancia);
+            }
+        }
+    }
+}
+
+function transformarDistanciaEnKm(coordenadas)=>{
+    let instituto = turf.point([-0.225069,-78.5168959]);
+    let almacen=[];
+    let options = {units: 'kilometers'};
+    let distance = 0;
+    let direciones =0
+    for(let i=0;i<coordenadas.length;i++){
+        for(let j=0;j<2;j++){
+            if(j==0){
+                almacen = coordenadas[i][j];
+                let casa = turf.point(almacen);
+                distance = turf.distance(instituto,almacen , options);
+                distanciasKm.push(distance);
+                console.log(distanciasKm[direciones] + " casa de " + nombresCoordenadas[direciones])
+                direciones++;
             }
         }
     }
