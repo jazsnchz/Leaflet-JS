@@ -96,3 +96,20 @@ function transformarDistanciaEnKm(coordenadas)=>{
         }
     }
 }
+function ordenarDistancias(){
+    let aux=0;
+    for(let i=1 ;i<distanciasKm;i++){
+        for(let j=0;j<distanciasKm-1;j++){
+            if(distanciasKm[j]>distanciasKm[j+1]){
+                aux = distanciasKm[j];
+                distanciasKm[j]=distanciasKm[j+1];
+                distanciasKm[j+1]=auxS
+            }
+        }
+    }
+    
+    console.log(Math.min.apply(null,distanciasKm))
+    console.log(Math.max.apply(null,distanciasKm))
+
+    console.log(distanciasKm)
+}
